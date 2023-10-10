@@ -1,0 +1,185 @@
+body{
+    height: 5000px;
+}
+#wrap{
+    width: 100%;
+}
+
+/* 헤더 */
+.header{
+    width: 100%;
+    height: 80px;
+    border-bottom: 1px solid #ddd;
+    box-sizing: border-box;
+    background: white;
+    position: fixed;
+    top: 0;
+    z-index: 999999999;
+}
+/* 헤더 왼쪽 */
+.header_L{
+    height: 100%;
+    float: left;
+
+}
+/* 로고 */
+.logo{
+    height: 100%;
+    float: left;
+}
+.logo a{
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+.smile_logo{
+    width: 60px;
+    height: 60px;
+    margin: 10px;
+    box-sizing: border-box;
+}
+.E_logo{
+    width: 90px;
+    height: 40px;
+    margin: 20px 10px;
+    box-sizing: border-box;
+}
+/* 내비 바 */
+.nav_bar{
+    height: 100%;
+    color: #666;
+    float: left;
+
+}
+.nav_bar a{
+    width: 100%;
+    height: 100%;
+    display: block;
+    padding: 0 20px;
+    box-sizing: border-box;
+}
+.nav_menu{
+    height: 100%;
+    line-height: 80px;
+    float: left;
+
+    transition: all 0.3s;
+}
+.pink_line{
+    width: 100%;
+    height: 2px;
+    background-color: #ffa0c5;
+    transform: scale(0);
+
+    transition: all 0.3s;
+}
+.nav_menu:hover{
+    color:#ffa0c5;
+}
+.nav_menu:hover .pink_line{
+    transform: scale(1);
+}
+
+/* 헤더 오른쪽 */
+.header_R{
+    float: right;
+
+}
+.join_box{
+    height: 100%;
+    float: left;
+    padding: 5px 10px;
+    box-sizing: border-box;
+}
+.join_box img{
+    width: 50px;
+    height: 50px;
+}
+.join_box span{
+    font-size: 11px;
+    display: block;
+    text-align: center;
+    color: #666;
+}
+/* 내비 판 */
+.nav_pan{
+    width: 100%;
+    /* height: 250px; */
+    height: 0;     
+    transition: all 0.5s;   
+    overflow: hidden;
+    background-color: white;
+}
+.nav_pan_active {
+    height: 250px;
+}
+.nav_pan .nav_pan_menu {
+    width: 100%;
+    height: 100%;
+    display: none;
+    
+    padding: 10px 50px;
+    box-sizing: border-box;
+}
+
+.pan_menu_title{
+    width: 15%;
+    height: 100%;
+    font-size: 25px;
+    text-align: center;
+    color: #ffa0c5;
+    border-right: 2px solid #ddd;
+    padding: 20px;
+    box-sizing: border-box;
+
+    float: left;
+}
+.pan_menu_list{
+    width: 35%;
+    height: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+    color: #666;
+    float: left;
+}
+.pan_menu_list li{
+    padding: 5px 0;
+    transition: all 0.3s;
+}
+.pan_menu_list li:hover{
+    color: #ffa0c5;
+}
+
+
+.pan_menu_img{
+    width: 50%;
+    height: 230px;
+    float: left;
+    
+}
+
+#pm_img1 {
+    background: url(../img/pan_menu/pan_img1.png) no-repeat top / contain;
+}
+#pm_img2 {
+    background: url(../img/pan_menu/pan_img2.png) no-repeat top / contain;
+}
+#pm_img3 {
+    background: url(../img/pan_menu/pan_img3.png) no-repeat top / contain;
+}
+#pm_img4 {
+    background: url(../img/pan_menu/pan_img4.png) no-repeat top / contain;
+}
+#pm_img5 {
+    background: url(../img/pan_menu/pan_img5.png) no-repeat top / contain;
+}
+
+.nav_pan .nav_pan_active {
+    display: block;
+}
+
+.footer{
+    width: 100%;
+    height: 300px;
+    background-color: #fdfaf7;
+}

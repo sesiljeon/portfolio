@@ -1,0 +1,565 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/common.css">
+    <link rel="stylesheet" href="./css/header_footer.css">
+    <link rel="stylesheet" href="./css/index.css">
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+</head>
+<body>
+    <div id="wrap">
+        <header class="header">
+            <div class="w_1600">
+                <div class="header_L">
+                    <div class="logo">
+                        <a href="">
+                            <img src="./img/knotted_logo_icon.png" alt="" class="smile_logo">
+                            <img src="./img/knotted_E_logo.png" alt="" class="E_logo">
+                        </a>
+                    </div>
+                    <div class="nav_bar">
+                        <div class="nav_menu">
+                            <a href="">BRAND</a>
+                            <div class="pink_line"></div>
+                        </div>
+                        <div class="nav_menu">
+                            <a href="">MENU</a>
+                            <div class="pink_line"></div>
+                        </div>
+                        <div class="nav_menu">
+                            <a href="">LOCATION</a>
+                            <div class="pink_line"></div>
+                        </div>
+                        <div class="nav_menu">
+                            <a href="">RESERVATION</a>
+                            <div class="pink_line"></div>
+                        </div>
+                        <div class="nav_menu">
+                            <a href="">COMMUNITY</a>
+                            <div class="pink_line"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="header_R">
+                    <div class="header_R_box">
+                        <div class="join_box login">
+                            <a href="">
+                                <img src="./img/login_icon.png" alt="">
+                                <span>LOGIN</span>
+                            </a>
+                        </div>
+                        <div class="join_box my_page">
+                            <a href="">
+                                <img src="./img/my_page_icon.png" alt="">
+                                <span>MY PAGE</span>
+                            </a>
+                        </div>
+                        <div class="join_box cart">
+                            <a href="">
+                                <img src="./img/cart_icon.png" alt="">
+                                <span>CART</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="nav_pan">
+                <div class="w_1400">
+                    <div class="nav_pan_menu" id="pan_menu1">
+                        <div class="pan_menu_title">BRAND</div>
+                        <ul class="pan_menu_list">
+                            <li>노티드 소개</li>
+                            <li>본사</li>
+                            <li>오시는 길</li>
+                        </ul>
+                        <div class="pan_menu_img" id="pm_img1"></div>
+                    </div>
+                    <div class="nav_pan_menu" id="pan_menu2">
+                        <div class="pan_menu_title">MENU</div>
+                        <ul class="pan_menu_list">
+                            <li>전체</li>
+                            <li>도넛</li>
+                            <li>케이크</li>
+                            <li>베이커리</li>
+                            <li>컵케이크</li>
+                            <li>음료</li>
+                        </ul>
+                        <div class="pan_menu_img"  id="pm_img2"></div>
+                    </div>
+                    <div class="nav_pan_menu" id="pan_menu3">
+                        <div class="pan_menu_title">LOCATION</div>
+                        <ul class="pan_menu_list">
+                            <li>매장 안내</li>
+                        </ul>
+                        <div class="pan_menu_img"  id="pm_img3"></div>
+                    </div>
+                    <div class="nav_pan_menu" id="pan_menu4">
+                        <div class="pan_menu_title">RESERVATION</div>
+                        <ul class="pan_menu_list">
+                            <li>예약문의</li>
+                        </ul>
+                        <div class="pan_menu_img"  id="pm_img4"></div>
+                    </div>
+                    <div class="nav_pan_menu" id="pan_menu5">
+                        <div class="pan_menu_title">COMMUNITY</div>
+                        <ul class="pan_menu_list">
+                            <li>이벤트</li>
+                            <li>고객 문의</li>
+                            <li>FAQ</li>
+                        </ul>
+                        <div class="pan_menu_img" id="pm_img5"></div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <div class="main_banner_slide">
+            <div class="main_banner m_banner1"></div>
+            <div class="main_banner m_banner2"></div>
+            <div class="main_banner m_banner3"></div>
+
+            <div class="mb_btn_slide" id="mb_btn_slide_L"></div>
+            <div class="mb_btn_slide" id="mb_btn_slide_R"></div>
+
+            <div class="main_banner_indi">
+                <!-- <div class="mb_indi mb_indi_active"></div>
+                <div class="mb_indi"></div>
+                <div class="mb_indi"></div> -->
+            </div>
+        </div>
+        <main class="container">
+            <section class="ball_banner">
+                <div class="w_1600">
+                    <div class="big_ball ball1 "></div> <!-- ball_down1-->
+                    <div class="ball ball2 "></div> <!-- ball_down2-->
+                    <div class="ball ball3 "></div> <!-- ball_down2-->
+                    <div class="big_ball ball4 "></div> <!-- ball_down1-->
+                    <div class="ball ball5 "></div> <!-- ball_down2-->
+                    <div class="ball ball6 "></div> <!-- ball_down2-->
+                    <div class="big_ball ball7 "></div> <!-- ball_down1-->
+                    <div class="big_ball ball8 "></div> <!-- ball_down1-->
+                    <div class="ball_banner_txt ">
+                        <img src="./img/knotted_Big_E_logo.png" alt="">
+                        <span>꿈과 환상이 가득한<br>Knotted World</span>
+                        <div class="rainbow"></div>
+                    </div>
+                </div>
+            </section>
+            <section class="knotted_menu">
+                    <div class="k_menu_tab_box">
+                        <div class="tab_box_title_box">
+                            <img src="./img/knotted_logo_icon.png" alt="">
+                            <div class="tab_box_title">Knotted Donut Menu</div>
+                        </div>
+                        <div class="tab_box_list">
+                                <div class="k_menu_tab tab_donut">
+                                    <div class="txt_cicle"></div>
+                                    <span>DONUT</span>
+                                </div>
+                                <div class="k_menu_tab tab_cake">
+                                    <div class="txt_cicle"></div>
+                                    <span>CAKE</span>
+                                </div>
+                                <div class="k_menu_tab tab_bakery">
+                                    <div class="txt_cicle"></div>
+                                    <span>BAKERY</span>
+                                </div>
+                                <div class="k_menu_tab tab_drink">
+                                    <div class="txt_cicle"></div>
+                                    <span>DRINK</span>
+                                </div>
+                        </div>
+                    </div>
+                    <div class="k_menu_item_box w_1600">
+                        <ul class="k_menu_item_ul k_menu_item_ul_active">
+                            
+                            <li class="k_menu_item_li item_donut">
+                                <div class="item_img_box">
+                                    <div class="img_bg"></div>
+                                    <div class="item_img">
+                                        <img src="./img/item_donut/donut1_우유생크림.png" alt="">
+                                    </div>
+                                </div>
+                                <div class="item_txt">
+                                    <div class="item_title_en">Milk Cream Donut</div>
+                                    <div class="item_title_ko">우유 생크림 도넛</div>
+                                </div>
+                            </li>
+                            <li class="k_menu_item_li item_donut">
+                                <div class="item_img_box">
+                                    <div class="img_bg"></div>
+                                    <div class="item_img">
+                                        <img src="./img/item_donut/donut2_클래식바닐라.png" alt="">
+                                    </div>
+                                </div>
+                                <div class="item_txt">
+                                    <div class="item_title_en">Milk Cream Donut</div>
+                                    <div class="item_title_ko">우유 생크림 도넛</div>
+                                </div>
+                            </li>
+                            <li class="k_menu_item_li item_donut">
+                                <div class="item_img_box">
+                                    <div class="img_bg"></div>
+                                    <div class="item_img">
+                                        <img src="./img/item_donut/donut3_라즈베리.PNG" alt="">
+                                    </div>
+                                </div>
+                                <div class="item_txt">
+                                    <div class="item_title_en">Milk Cream Donut</div>
+                                    <div class="item_title_ko">우유 생크림 도넛</div>
+                                </div>
+                            </li>
+                            <li class="k_menu_item_li item_donut">
+                                <div class="item_img_box">
+                                    <div class="img_bg"></div>
+                                    <div class="item_img">
+                                        <img src="./img/item_donut/donut4_초코푸딩.PNG" alt="">
+                                    </div>
+                                </div>
+                                <div class="item_txt">
+                                    <div class="item_title_en">Milk Cream Donut</div>
+                                    <div class="item_title_ko">우유 생크림 도넛</div>
+                                </div>
+                            </li>
+                            <li class="k_menu_item_li item_donut">
+                                <div class="item_img_box">
+                                    <div class="img_bg"></div>
+                                    <div class="item_img">
+                                        <img src="./img/item_donut/donut5_카야버터.PNG" alt="">
+                                    </div>
+                                </div>
+                                <div class="item_txt">
+                                    <div class="item_title_en">Milk Cream Donut</div>
+                                    <div class="item_title_ko">우유 생크림 도넛</div>
+                                </div>
+                            </li>
+                            <li class="k_menu_item_li item_donut">
+                                <div class="item_img_box">
+                                    <div class="img_bg"></div>
+                                    <div class="item_img">
+                                        <img src="./img/item_donut/donut6_얼그레이.PNG" alt="">
+                                    </div>
+                                </div>
+                                <div class="item_txt">
+                                    <div class="item_title_en">Milk Cream Donut</div>
+                                    <div class="item_title_ko">우유 생크림 도넛</div>
+                                </div>
+                            </li>
+                            <li class="menu_item_btn item_btn_L"></li>
+                            <li class="menu_item_btn item_btn_R"></li>
+                        </ul>
+                        <ul class="k_menu_item_ul"> 
+                            
+                            <li class="k_menu_item_li item_cake">
+                                <div class="item_img_box">
+                                    <div class="img_bg"></div>
+                                    <div class="item_img">
+                                        <img src="./img/item_cake/cake1_옐로우스마일.PNG" alt="">
+                                    </div>
+                                </div>
+                                <div class="item_txt">
+                                    <div class="item_title_en">Milk Cream Donut</div>
+                                    <div class="item_title_ko">우유 생크림 도넛</div>
+                                </div>
+                            </li>
+                            <li class="k_menu_item_li item_cake">
+                                <div class="item_img_box">
+                                    <div class="img_bg"></div>
+                                    <div class="item_img">
+                                        <img src="./img/item_cake/cake2_클로버스마일.PNG" alt="">
+                                    </div>
+                                </div>
+                                <div class="item_txt">
+                                    <div class="item_title_en">Milk Cream Donut</div>
+                                    <div class="item_title_ko">우유 생크림 도넛</div>
+                                </div>
+                            </li>
+                            <li class="k_menu_item_li item_cake">
+                                <div class="item_img_box">
+                                    <div class="img_bg"></div>
+                                    <div class="item_img">
+                                        <img src="./img/item_cake/cake3_퓨어스트로베리주니어.PNG" alt="">
+                                    </div>
+                                </div>
+                                <div class="item_txt">
+                                    <div class="item_title_en">Milk Cream Donut</div>
+                                    <div class="item_title_ko">우유 생크림 도넛</div>
+                                </div>
+                            </li>
+                            <li class="k_menu_item_li item_cake">
+                                <div class="item_img_box">
+                                    <div class="img_bg"></div>
+                                    <div class="item_img">
+                                        <img src="./img/item_cake/cake4_크림버니.PNG" alt="">
+                                    </div>
+                                </div>
+                                <div class="item_txt">
+                                    <div class="item_title_en">Milk Cream Donut</div>
+                                    <div class="item_title_ko">우유 생크림 도넛</div>
+                                </div>
+                            </li>
+                            <li class="menu_item_btn item_btn_L"></li>
+                            <li class="menu_item_btn item_btn_R"></li>
+                        </ul>
+                        <ul class="k_menu_item_ul">
+                            <li class="k_menu_item_li item_bakery">
+                                <div class="item_img_box">
+                                    <div class="img_bg"></div>
+                                    <div class="item_img">
+                                        <img src="./img/item_bakery/bakery1_스트로베리밀키크로플.PNG" alt="">
+                                    </div>
+                                </div>
+                                <div class="item_txt">
+                                    <div class="item_title_en">Milk Cream Donut</div>
+                                    <div class="item_title_ko">우유 생크림 도넛</div>
+                                </div>
+                            </li>
+                            <li class="k_menu_item_li item_bakery">
+                                <div class="item_img_box">
+                                    <div class="img_bg"></div>
+                                    <div class="item_img">
+                                        <img src="./img/item_bakery/bakery2_누텔라크림크로플.PNG" alt="">
+                                    </div>
+                                </div>
+                                <div class="item_txt">
+                                    <div class="item_title_en">Milk Cream Donut</div>
+                                    <div class="item_title_ko">우유 생크림 도넛</div>
+                                </div>
+                            </li>
+                            <li class="k_menu_item_li item_bakery">
+                                <div class="item_img_box">
+                                    <div class="img_bg"></div>
+                                    <div class="item_img">
+                                        <img src="./img/item_bakery/bakery3_딸기크루아상.PNG" alt="">
+                                    </div>
+                                </div>
+                                <div class="item_txt">
+                                    <div class="item_title_en">Milk Cream Donut</div>
+                                    <div class="item_title_ko">우유 생크림 도넛</div>
+                                </div>
+                            </li>
+                            <li class="k_menu_item_li item_bakery">
+                                <div class="item_img_box">
+                                    <div class="img_bg"></div>
+                                    <div class="item_img">
+                                        <img src="./img/item_bakery/bakery4_오레오크루아상.PNG" alt="">
+                                    </div>
+                                </div>
+                                <div class="item_txt">
+                                    <div class="item_title_en">Milk Cream Donut</div>
+                                    <div class="item_title_ko">우유 생크림 도넛</div>
+                                </div>
+                            </li>
+                            <li class="k_menu_item_li item_bakery">
+                                <div class="item_img_box">
+                                    <div class="img_bg"></div>
+                                    <div class="item_img">
+                                        <img src="./img/item_bakery/bakery3_딸기크루아상.PNG" alt="">
+                                    </div>
+                                </div>
+                                <div class="item_txt">
+                                    <div class="item_title_en">Milk Cream Donut</div>
+                                    <div class="item_title_ko">우유 생크림 도넛</div>
+                                </div>
+                            </li>
+                            <li class="k_menu_item_li item_bakery">
+                                <div class="item_img_box">
+                                    <div class="img_bg"></div>
+                                    <div class="item_img">
+                                        <img src="./img/item_bakery/bakery4_오레오크루아상.PNG" alt="">
+                                    </div>
+                                </div>
+                                <div class="item_txt">
+                                    <div class="item_title_en">Milk Cream Donut</div>
+                                    <div class="item_title_ko">우유 생크림 도넛</div>
+                                </div>
+                            </li>
+                            <li class="menu_item_btn item_btn_L"></li>
+                            <li class="menu_item_btn item_btn_R"></li>
+                        </ul>
+                        <ul class="k_menu_item_ul">
+                            <li class="k_menu_item_li item_drink">
+                                <div class="item_img_box">
+                                    <div class="img_bg"></div>
+                                    <div class="item_img">
+                                        <img src="./img/item_drink/IMG_1721.PNG" alt="">
+                                    </div>
+                                </div>
+                                <div class="item_txt">
+                                    <div class="item_title_en">Milk Cream Donut</div>
+                                    <div class="item_title_ko">우유 생크림 도넛</div>
+                                </div>
+                            </li>
+                            <li class="k_menu_item_li item_drink">
+                                <div class="item_img_box">
+                                    <div class="img_bg"></div>
+                                    <div class="item_img">
+                                        <img src="./img/item_drink/IMG_1699.PNG" alt="">
+                                    </div>
+                                </div>
+                                <div class="item_txt">
+                                    <div class="item_title_en">Milk Cream Donut</div>
+                                    <div class="item_title_ko">우유 생크림 도넛</div>
+                                </div>
+                            </li>
+                            <li class="k_menu_item_li item_drink">
+                                <div class="item_img_box">
+                                    <div class="img_bg"></div>
+                                    <div class="item_img">
+                                        <img src="./img/item_drink/IMG_1700.PNG" alt="">
+                                    </div>
+                                </div>
+                                <div class="item_txt">
+                                    <div class="item_title_en">Milk Cream Donut</div>
+                                    <div class="item_title_ko">우유 생크림 도넛</div>
+                                </div>
+                            </li>
+                            <li class="k_menu_item_li item_drink">
+                                <div class="item_img_box">
+                                    <div class="img_bg"></div>
+                                    <div class="item_img">
+                                        <img src="./img/item_drink/IMG_1701.PNG" alt="">
+                                    </div>
+                                </div>
+                                <div class="item_txt">
+                                    <div class="item_title_en">Milk Cream Donut</div>
+                                    <div class="item_title_ko">우유 생크림 도넛</div>
+                                </div>
+                            </li>
+                            <li class="menu_item_btn item_btn_L"></li>
+                            <li class="menu_item_btn item_btn_R"></li>
+                        </ul>
+                    </div>
+                    <div class="more_view">
+                        <a href="">
+                            <h1 class="more_view_txt">All Product</h1> 
+                        </a>
+                    </div>
+            </section>
+            <section class="reserve_banner">
+                <a href="#"><img src="./img/기타/47.png" alt=""></a>
+            </section>
+            <section class="con_banner">
+                    <div class="con_banner_img"></div>
+                    <div class="con_banner_in">
+                        <div class="big_circle">
+                            <div class="cb_txt">
+                                <div class="cb_txt_img"></div>
+                                <a href="#"><div class="cb_btn">
+                                    <span>Join Us</span> 
+                                </div></a>
+                            </div>
+                        </div>
+                    </div>
+                    
+            </section>
+            <section class="event">
+                <div class="event_box w_1600">
+                    <div class="tab_box_title_box">
+                        <img src="./img/knotted_logo_icon.png" alt="">
+                        <div class="tab_box_title">EVENT & NEWS</div>
+                    </div>
+                    <div class="event_list">
+                        <ul class="event_item_ul">
+                            <li class="event_item_li event_item1">
+                                <div class="event_img">
+                                    <img src="./img/event_item/event1_2.jpg" alt="" class="e_img1">
+                                    <img src="./img/event_item/event1.jpg" alt="" class="e_img2">
+                                </div>
+
+                                <div class="event_txt"><h3>이슬로작가님과 노티드의<br>다양한 그림과 이야기가 담긴 전시</h3>
+                                    </div>
+                            </li>
+                            <li class="event_item_li event_item2">
+                                <div class="event_img">
+                                    <img src="./img/event_item/event2_2.jpg" alt="" class="e_img1">
+                                    <img src="./img/event_item/event2.jpg" alt=""  class="e_img2">
+                                </div>
+                                <div class="event_txt"></div>
+                            </li>
+                            <li class="event_item_li event_item3">
+                                <div class="event_img">
+                                    <img src="./img/event_item/event3_2.jpg" alt=""class="e_img1">
+                                    <img src="./img/event_item/event3.jpg" alt=""  class="e_img2">
+                                </div>
+                                <div class="event_txt"></div>
+                            </li>
+                            <li class="event_item_li event_item4">
+                                <div class="event_img">
+                                    <img src="./img/event_item/event4_2.jpg" alt=""class="e_img1">
+                                    <img src="./img/event_item/event4.jpg" alt=""  class="e_img2">
+                                </div>
+                                <div class="event_txt"></div>
+                            </li>
+                            <li class="event_item_li event_item5">
+                                <div class="event_img">
+                                    <img src="./img/event_item/event5_2.jpg" alt=""class="e_img1">
+                                    <img src="./img/event_item/event5.jpg" alt=""  class="e_img2">
+                                </div>
+                                <div class="event_txt"></div>
+                            </li>
+                            <li class="event_item_li event_item6">
+                                <div class="event_img">
+                                    <img src="./img/event_item/event6_2.jpg" alt=""class="e_img1">
+                                    <img src="./img/event_item/event6.jpg" alt=""  class="e_img2">
+                                </div>
+                                <div class="event_txt"></div>
+                            </li>
+                            <li class="event_item_li event_item7">
+                                <div class="event_img">
+                                    <img src="./img/event_item/event7_2.jpg" alt=""class="e_img1">
+                                    <img src="./img/event_item/event7.jpg" alt=""  class="e_img2">
+                                </div>
+                                <div class="event_txt"></div>
+                            </li>
+                            <li class="event_item_li event_item8">
+                                <div class="event_img">
+                                    <img src="./img/event_item/event8_2.jpg" alt=""class="e_img1">
+                                    <img src="./img/event_item/event8.jpg" alt=""  class="e_img2">
+                                </div>
+                                <div class="event_txt"></div>
+                            </li>
+                        </ul>
+                        <div class="event_item_btn event_btn_L"></div>
+                        <div class="event_item_btn event_btn_R"></div>
+                    </div>
+                </div>
+            </section>
+            <section class="sec_sns">
+                <div class="sns_box">
+                    <div class="sns_title">
+                        <div class="s_title_txt"><h1>#INSTAGRAM</h1></div>
+                        <img src="./img/knotted_big_logo.png" alt=""  class="s_title_logo">
+                        <br>
+                        <img src="./img/knotted_Big_E_logo.png" alt="" class="s_E_logo">
+                    </div>
+                    <div class="sns_box_list">
+                        <ul class="sns_img_box_ul sns_img_box1 w_1600">
+                            <li class="sns_img_li s_img1"></li>
+                            <li class="sns_img_li s_img2"></li>
+                            <li class="sns_img_li s_img3"></li>
+                            <li class="sns_img_li s_img4"></li>
+                            <li class="sns_img_li s_img5"></li>
+                            <li class="sns_img_li s_img6"></li>
+                        </ul>
+                        <ul class="sns_img_box_ul sns_img_box2 w_1600">
+                            <li class="sns_img_li s_img7"></li>
+                            <li class="sns_img_li s_img8"></li>
+                            <li class="sns_img_li s_img9"></li>
+                            <li class="sns_img_li s_img10"></li>
+                            <li class="sns_img_li s_img11"></li>
+                            <li class="sns_img_li s_img12"></li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <footer class="footer"></footer>
+
+    
+    <script src="./js/header_footer.js"></script>
+    <script src="./js/index(kotted).js"></script>
+</body>
+</html>

@@ -1,0 +1,243 @@
+.container{
+    margin-top: 80px;
+}
+.menu_banner{
+    width: 100%;
+    height: 480px;
+    position: relative;
+    text-align: center;
+}
+.m_banner_img{
+    width: 100%;
+    height: 100%;
+    background: url(../img/menu_banner.jpg) no-repeat top /cover;
+}
+.m_banner_txt{
+    
+}
+.m_banner_txt h1{
+    width: 100%;
+    font-size: 40px;
+    color:white;
+    font-weight: 400px;
+    margin: 0;
+    padding: 0;
+    opacity: 0.7;
+
+    position: absolute;
+    top: 50%;
+
+    background-color: #ffa0c5;
+    animation: move_up 1s forwards;
+
+}
+@keyframes move_up{
+    0%{transform: translateY(0); opacity: 0;}
+    100%{transform: translateY(-50%); opacity: 0.8;}
+}
+/* 신메뉴 */
+.new_menu{
+    width: 100%;
+    background-color:#fffae6 ;
+    margin-top: 50px;
+}
+.k_menu_item_box{
+    height: 600px ;
+    width: 1600px;
+    box-sizing: border-box;
+    margin-top: 50px;
+    overflow: hidden;
+}
+.new_icon{
+    font-size: 18px;
+    width: 60px;
+    height: 60px;
+    text-align: center;
+    line-height: 60px;
+    position: absolute;
+    top: 32%;
+    right: 15%;
+    background-color: #ffa0c5;
+    border-radius: 50%;
+    color: white;
+    font-weight: 900;
+    transition: all 1s;
+    opacity: 0;
+
+}
+
+.k_menu_item_ul{
+    width: 1600px;
+    
+    height: 100%;
+    box-sizing: border-box;
+
+    transition: 0.3s;
+    display: flex;
+    gap: 15px;
+}
+
+.k_menu_item_li{
+    width: calc(100%/ 4);
+    height: 100%;
+    box-sizing: border-box;
+
+}
+.k_menu_item_li:hover .new_icon{
+    transform: rotateY(720deg); opacity: 1;
+}
+
+.item_img_box{
+    width: 100%;
+    height: 400px;
+    position: relative;
+}
+.img_bg{
+    width: 100%;
+    height: 340px;
+    border-radius: 50% 50% 0 0;
+    background-color: #ffeb90;
+    transition: background 1s;
+}
+.k_menu_item_li:hover .img_bg{
+    background: url(../img/v935-aum-06.jpg) no-repeat center/ cover;
+}
+.item_img{
+    transform: translateX(-50%);
+    text-align: center;
+    position: absolute;
+    bottom: 3%;
+    left: 50%;
+}
+.item_img:hover{
+    transform: translateX(-50%) rotate(-10deg);
+}
+.item_img img{
+    width: 240px;
+    height: 240px;
+}
+
+.item_txt{
+    width: 100%;
+    height: 100px;
+    /* background-color: #fdf3c3; */
+    text-align: center;
+    padding: 20px;
+    box-sizing: border-box;
+    color: #666;
+    border-top: 1px solid #ddd;
+}
+.item_title_en{
+    font-size: 28px;
+}
+
+
+
+
+
+
+/* 전체 메뉴 */
+/* 전체 메뉴 타이틀 */
+.all_product_title{
+    width: 100%;
+    background-color: #fffae6;
+    margin-top: 50px;
+}
+.tab_box_title_box{
+    width: 100%;
+    padding-top: 100px;
+    text-align: center;
+}
+.tab_box_title_box img{
+    width: 70px;
+    height: 70px;
+    margin: 0 auto;
+}
+.tab_box_title{
+    font-size: 38px;
+    font-weight: 900;
+    color: #ffa0c5;
+}
+.tab_box_title_box h1{
+    width: 100%;
+    overflow: hidden;
+    color: #666;
+    font-size: 16px;
+}
+/* 전체 메뉴 타이틀 페이지 이동 버튼  */
+.all_title_btn_box{
+    width: 100%;
+    overflow: hidden;
+}
+.all_title_btn_ul{
+    width: 600px;
+    display: flex;
+    gap: 20px;
+    
+}
+.all_title_btn_li{
+    width: calc(100% / 5);
+    background-color: #ffeb90;
+    border-radius: 20px;
+    box-sizing: border-box;
+    text-align: center;
+    color: #666;
+    overflow: hidden;
+    padding: 10px 0;
+    
+}
+.all_title_btn_li a{
+    display: block;
+    width: 100%;
+    height: 100%;
+
+    transition: all 0.3s;
+}
+.all_title_btn_li:hover a{
+    transform: scale(1.1);
+}
+
+.all_title_btn_li img{
+    width: 60px;
+}
+.all_title_btn_li h4{
+    margin: 0;
+}
+/* 전체 메뉴 중 도넛 */
+.item_box{
+    width: 100%;
+    overflow: hidden;
+}
+.item_list_ul{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+}
+.item_list_li{
+    width: calc((100% - 160px)/5);
+    height: 100%;
+    border-radius: 20px;
+    border: 1px solid #ddd;
+
+}
+.item_img{
+    z-index: 999;
+}
+.item_bg_cicle{
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    background-color: #ffeb90;
+    transform: scale(0);
+    transition: all 0.5s;
+}
+.item_list_li:hover .item_bg_cicle{
+    transform: scale(1);
+}
+.item_img_box2{
+    width: 100%;
+    height: 300px;
+    position: relative;
+}
